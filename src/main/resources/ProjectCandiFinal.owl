@@ -1,0 +1,2903 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/candi-indonesia"
+     xml:base="http://www.semanticweb.org/candi-indonesia"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:candi-indonesia="http://www.semanticweb.org/candi-indonesia"
+     xmlns:candi-indonesia1="http://www.semanticweb.org/candi-indonesia#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/candi-indonesia">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/candi-indonesia"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#abadPembangunan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#abadPembangunan">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/candi-indonesia#dibangunPadaAbad"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Abad"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#arcaPada -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#arcaPada">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/candi-indonesia#memilikiArca"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Arca"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#bagianDariCandi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#bagianDariCandi">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/candi-indonesia#memilikiKomponen"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#KomponenArsitektur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#berasalDariDinasti -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#berasalDariDinasti">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/candi-indonesia#memilikiRaja"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Raja"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Dinasti"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#berdekatanDengan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#berdekatanDengan">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#dibangunOlehRaja -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#dibangunOlehRaja">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/candi-indonesia#membangunCandi"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Raja"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#dibangunPadaAbad -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#dibangunPadaAbad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Abad"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#didukungOlehPrasasti -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#didukungOlehPrasasti">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/candi-indonesia#mendukungCandi"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Prasasti"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#digunakanUntuk -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#digunakanUntuk">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/candi-indonesia#terbuatDari"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#MaterialBangunan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#KomponenArsitektur"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#dikeluarkanOlehDinasti -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#dikeluarkanOlehDinasti">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/candi-indonesia#memilikiPrasasti"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Prasasti"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Dinasti"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#dipengaruhiOleh -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#dipengaruhiOleh">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#disebutkanDalamPrasasti -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#disebutkanDalamPrasasti">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/candi-indonesia#prasastiMenyebutkanRaja"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Prasasti"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#fungsiDariCandi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#fungsiDariCandi">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/candi-indonesia#memilikiFungsi"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#FungsiCandi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#koordinatDari -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#koordinatDari">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/candi-indonesia#memilikiKoordinat"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#lokasiDariCandi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#lokasiDariCandi">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/candi-indonesia#memilikiLokasi"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Kabupaten"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#membangunCandi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#membangunCandi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Raja"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#memilikiArca -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#memilikiArca">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Arca"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#memilikiFungsi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#memilikiFungsi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#FungsiCandi"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#memilikiKabupaten -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#memilikiKabupaten">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/candi-indonesia#terletakDiProvinsi"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Provinsi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Kabupaten"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#memilikiKomponen -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#memilikiKomponen">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#KomponenArsitektur"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#memilikiKoordinat -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#memilikiKoordinat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#memilikiLokasi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#memilikiLokasi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Kabupaten"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#memilikiPrasasti -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#memilikiPrasasti">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Dinasti"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Prasasti"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#memilikiProvinsi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#memilikiProvinsi">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/candi-indonesia#terletakDiPulau"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Pulau"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Provinsi"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#memilikiRaja -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#memilikiRaja">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Dinasti"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Raja"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#memilikiRelief -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#memilikiRelief">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/candi-indonesia#reliefPada"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Relief"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#memilikiStupa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#memilikiStupa">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/candi-indonesia#stupaPada"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiBuddha"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Stupa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#mendukungCandi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#mendukungCandi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Prasasti"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#prasastiMenyebutkanRaja -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#prasastiMenyebutkanRaja">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Prasasti"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Raja"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#reliefPada -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#reliefPada">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Relief"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#satuKompleksDengan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#satuKompleksDengan">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#sezamanDengan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#sezamanDengan">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#stupaPada -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#stupaPada">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Stupa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiBuddha"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#terbuatDari -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#terbuatDari">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#KomponenArsitektur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#MaterialBangunan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#terletakDiProvinsi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#terletakDiProvinsi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Kabupaten"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Provinsi"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#terletakDiPulau -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/candi-indonesia#terletakDiPulau">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Provinsi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/candi-indonesia#Pulau"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#deskripsiCandi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/candi-indonesia#judulWikipedia">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Judul artikel Wikipedia untuk mengambil foto otomatis. Boleh berawalan kode bahasa, mis. id:Candi_Sukuh (default: en).</rdfs:comment>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/candi-indonesia#fotoCandi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>URL (http/https) atau path file lokal foto candi. Jika diisi, menimpa foto dari Wikipedia.</rdfs:comment>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/candi-indonesia#deskripsiCandi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#deskripsiFungsi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/candi-indonesia#deskripsiFungsi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#FungsiCandi"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#deskripsiKomponen -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/candi-indonesia#deskripsiKomponen">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#KomponenArsitektur"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#isiRingkasPrasasti -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/candi-indonesia#isiRingkasPrasasti">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#KonteksSejarah"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#judulCeritaRelief -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/candi-indonesia#judulCeritaRelief">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#KomponenArsitektur"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#jumlahCandiDalamKompleks -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/candi-indonesia#jumlahCandiDalamKompleks">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#jumlahPanelRelief -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/candi-indonesia#jumlahPanelRelief">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#KomponenArsitektur"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#luasArea -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/candi-indonesia#luasArea">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#namaCandi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/candi-indonesia#namaCandi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#namaDinasti -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/candi-indonesia#namaDinasti">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#KonteksSejarah"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#namaKomponen -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/candi-indonesia#namaKomponen">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#KomponenArsitektur"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#namaMaterial -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/candi-indonesia#namaMaterial">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#KomponenArsitektur"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#namaPrasasti -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/candi-indonesia#namaPrasasti">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#KonteksSejarah"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#namaRaja -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/candi-indonesia#namaRaja">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#KonteksSejarah"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#namaWilayah -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/candi-indonesia#namaWilayah">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#LokasiGeografis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#nilaiAbad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/candi-indonesia#nilaiAbad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#KonteksSejarah"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#nilaiBujur -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/candi-indonesia#nilaiBujur">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#nilaiLintang -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/candi-indonesia#nilaiLintang">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#statusPelestarian -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/candi-indonesia#statusPelestarian">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#tahunAkhirDinasti -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/candi-indonesia#tahunAkhirDinasti">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#KonteksSejarah"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#tahunAkhirMemerintah -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/candi-indonesia#tahunAkhirMemerintah">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#KonteksSejarah"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#tahunAwalDinasti -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/candi-indonesia#tahunAwalDinasti">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#KonteksSejarah"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#tahunBerdiri -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/candi-indonesia#tahunBerdiri">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#tahunMulaiMemerintah -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/candi-indonesia#tahunMulaiMemerintah">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#KonteksSejarah"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#tahunPrasasti -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/candi-indonesia#tahunPrasasti">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#KonteksSejarah"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#tinggiCandi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/candi-indonesia#tinggiCandi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Abad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/candi-indonesia#Abad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/candi-indonesia#KonteksSejarah"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Arca -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/candi-indonesia#Arca">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/candi-indonesia#KomponenArsitektur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Candi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/candi-indonesia#Candi"/>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#CandiBuddha -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/candi-indonesia#CandiBuddha">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#CandiGapura -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/candi-indonesia#CandiGapura">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/candi-indonesia#FungsiCandi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#CandiHindu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/candi-indonesia#CandiHindu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#CandiPemujaan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/candi-indonesia#CandiPemujaan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/candi-indonesia#FungsiCandi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#CandiPendharmaan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/candi-indonesia#CandiPendharmaan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/candi-indonesia#FungsiCandi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#CandiPetirtaan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/candi-indonesia#CandiPetirtaan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/candi-indonesia#FungsiCandi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#CandiSiwaBudha -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/candi-indonesia#CandiSiwaBudha">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/candi-indonesia#Candi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Dinasti -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/candi-indonesia#Dinasti">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/candi-indonesia#KonteksSejarah"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#FungsiCandi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/candi-indonesia#FungsiCandi"/>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Kabupaten -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/candi-indonesia#Kabupaten">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/candi-indonesia#LokasiGeografis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KomponenArsitektur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/candi-indonesia#KomponenArsitektur"/>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KonteksSejarah -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/candi-indonesia#KonteksSejarah"/>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Koordinat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/candi-indonesia#Koordinat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/candi-indonesia#LokasiGeografis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#LokasiGeografis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/candi-indonesia#LokasiGeografis"/>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#MaterialBangunan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/candi-indonesia#MaterialBangunan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/candi-indonesia#KomponenArsitektur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Prasasti -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/candi-indonesia#Prasasti">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/candi-indonesia#KonteksSejarah"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Provinsi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/candi-indonesia#Provinsi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/candi-indonesia#LokasiGeografis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Pulau -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/candi-indonesia#Pulau">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/candi-indonesia#LokasiGeografis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Raja -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/candi-indonesia#Raja">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/candi-indonesia#KonteksSejarah"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Relief -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/candi-indonesia#Relief">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/candi-indonesia#KomponenArsitektur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#StrukturAtap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/candi-indonesia#StrukturAtap">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/candi-indonesia#KomponenArsitektur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#StrukturKaki -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/candi-indonesia#StrukturKaki">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/candi-indonesia#KomponenArsitektur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#StrukturTubuh -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/candi-indonesia#StrukturTubuh">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/candi-indonesia#KomponenArsitektur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Stupa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/candi-indonesia#Stupa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/candi-indonesia#KomponenArsitektur"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#AbadKe10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#AbadKe10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Abad"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#Jolotundo"/>
+        <candi-indonesia1:nilaiAbad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</candi-indonesia1:nilaiAbad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#AbadKe11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#AbadKe11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Abad"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#GoaGajah"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#GunungKawi"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#MuaraTakus"/>
+        <candi-indonesia1:nilaiAbad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</candi-indonesia1:nilaiAbad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#AbadKe13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#AbadKe13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Abad"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#Bahal"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#Jago"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#Kidal"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#Singosari"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#Tikus"/>
+        <candi-indonesia1:nilaiAbad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">13</candi-indonesia1:nilaiAbad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#AbadKe14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#AbadKe14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Abad"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#BajangRatu"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#Cetho"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#Jawi"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#Sukuh"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#WringinLawang"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatWringinLawang"/>
+        <candi-indonesia1:nilaiAbad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">14</candi-indonesia1:nilaiAbad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#AbadKe7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#AbadKe7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Abad"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#Arjuna"/>
+        <candi-indonesia1:nilaiAbad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</candi-indonesia1:nilaiAbad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#AbadKe8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#AbadKe8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Abad"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#Badut"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#Borobudur"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#Gebang"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#GedongSongo"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#Kalasan"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#Ngawen"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#Pawon"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#Puntadewa"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#Semar"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#Sembadra"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#Sewu"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#Srikandi"/>
+        <candi-indonesia1:nilaiAbad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</candi-indonesia1:nilaiAbad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#AbadKe9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#AbadKe9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Abad"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#Bumiayu"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiLaras"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#Mendut"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#Plaosan"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#Prambanan"/>
+        <candi-indonesia1:abadPembangunan rdf:resource="http://www.semanticweb.org/candi-indonesia#Sambisari"/>
+        <candi-indonesia1:nilaiAbad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</candi-indonesia1:nilaiAbad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Airlangga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Airlangga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Raja"/>
+        <candi-indonesia1:berasalDariDinasti rdf:resource="http://www.semanticweb.org/candi-indonesia#Kediri"/>
+        <candi-indonesia1:namaRaja>Airlangga</candi-indonesia1:namaRaja>
+        <candi-indonesia1:tahunAkhirMemerintah rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1042</candi-indonesia1:tahunAkhirMemerintah>
+        <candi-indonesia1:tahunMulaiMemerintah rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1019</candi-indonesia1:tahunMulaiMemerintah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Amuntai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Amuntai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Kabupaten"/>
+        <candi-indonesia1:terletakDiProvinsi rdf:resource="http://www.semanticweb.org/candi-indonesia#KalimantanSelatan"/>
+        <candi-indonesia1:namaWilayah>Amuntai</candi-indonesia1:namaWilayah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Anusapati -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Anusapati">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Raja"/>
+        <candi-indonesia1:berasalDariDinasti rdf:resource="http://www.semanticweb.org/candi-indonesia#Singasari"/>
+        <candi-indonesia1:namaRaja>Anusapati</candi-indonesia1:namaRaja>
+        <candi-indonesia1:tahunAkhirMemerintah rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1248</candi-indonesia1:tahunAkhirMemerintah>
+        <candi-indonesia1:tahunMulaiMemerintah rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1227</candi-indonesia1:tahunMulaiMemerintah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#ArcaSiwaMahadewa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#ArcaSiwaMahadewa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Arca"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Prambanan"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sambisari"/>
+        <candi-indonesia1:deskripsiKomponen>Arca perwujudan Dewa Siwa sebagai dewa utama</candi-indonesia1:deskripsiKomponen>
+        <candi-indonesia1:namaKomponen>Arca Siwa Mahadewa</candi-indonesia1:namaKomponen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Arjuna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Arjuna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiHindu"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Penataran"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Plaosan"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe8"/>
+        <candi-indonesia1:memilikiKomponen rdf:resource="http://www.semanticweb.org/candi-indonesia#KakiCandiPersegi"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatArjuna"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Wonosobo"/>
+        <candi-indonesia1:satuKompleksDengan rdf:resource="http://www.semanticweb.org/candi-indonesia#Srikandi"/>
+        <candi-indonesia1:deskripsiCandi>Candi Hindu di Dataran Tinggi Dieng, Wonosobo</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Arjuna</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">809</candi-indonesia1:tahunBerdiri>
+        <candi-indonesia1:tinggiCandi rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</candi-indonesia1:tinggiCandi>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#AtapBerundak -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#AtapBerundak">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#StrukturAtap"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Arjuna"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#GedongSongo"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Kidal"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Penataran"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Prambanan"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Singosari"/>
+        <candi-indonesia1:deskripsiKomponen>Bentuk atap candi yang tersusun bertingkat mengecil ke atas</candi-indonesia1:deskripsiKomponen>
+        <candi-indonesia1:namaKomponen>Atap Berundak</candi-indonesia1:namaKomponen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#AtapRatna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#AtapRatna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#StrukturAtap"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Arjuna"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Badut"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#GedongSongo"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Prambanan"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sambisari"/>
+        <candi-indonesia1:deskripsiKomponen>Atap puncak berbentuk kemuncak ratna atau hiasan mirip bunga teratai/lingga pada candi Hindu</candi-indonesia1:deskripsiKomponen>
+        <candi-indonesia1:namaKomponen>Atap Ratna</candi-indonesia1:namaKomponen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#AtapStupa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#AtapStupa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#StrukturAtap"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Borobudur"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Kalasan"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Mendut"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Pawon"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Plaosan"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sewu"/>
+        <candi-indonesia1:deskripsiKomponen>Atap puncak berbentuk stupa yang menjadi ciri khas candi Buddha</candi-indonesia1:deskripsiKomponen>
+        <candi-indonesia1:namaKomponen>Atap Stupa</candi-indonesia1:namaKomponen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Badut -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Badut">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiHindu"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Kidal"/>
+        <candi-indonesia1:memilikiKomponen rdf:resource="http://www.semanticweb.org/candi-indonesia#KakiCandiPersegi"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatBadut"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Malang"/>
+        <candi-indonesia1:deskripsiCandi>Candi Hindu tertua di Jawa Timur yang terletak di Malang</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Badut</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">760</candi-indonesia1:tahunBerdiri>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Bahal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Bahal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiBuddha"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe11"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatBahal"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#PadangLawas"/>
+        <candi-indonesia1:deskripsiCandi>Kompleks candi Buddha Vajrayana di Padang Lawas, Sumatera Utara</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Bahal</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1020</candi-indonesia1:tahunBerdiri>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#BajangRatu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#BajangRatu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiGapura"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiHindu"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe14"/>
+        <candi-indonesia1:memilikiKomponen rdf:resource="http://www.semanticweb.org/candi-indonesia#KakiCandiPersegi"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatBajangRatu"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Mojokerto"/>
+        <candi-indonesia1:deskripsiCandi>Candi gapura peninggalan Majapahit di Mojokerto</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Bajang Ratu</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tinggiCandi rdf:datatype="http://www.w3.org/2001/XMLSchema#float">16.1</candi-indonesia1:tinggiCandi>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Balaputradewa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Balaputradewa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Raja"/>
+        <candi-indonesia1:berasalDariDinasti rdf:resource="http://www.semanticweb.org/candi-indonesia#Syailendra"/>
+        <candi-indonesia1:namaRaja>Balaputradewa</candi-indonesia1:namaRaja>
+        <candi-indonesia1:tahunAkhirMemerintah rdf:datatype="http://www.w3.org/2001/XMLSchema#int">870</candi-indonesia1:tahunAkhirMemerintah>
+        <candi-indonesia1:tahunMulaiMemerintah rdf:datatype="http://www.w3.org/2001/XMLSchema#int">860</candi-indonesia1:tahunMulaiMemerintah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Bali -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Bali">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Pulau"/>
+        <candi-indonesia1:memilikiProvinsi rdf:resource="http://www.semanticweb.org/candi-indonesia#Bali"/>
+        <candi-indonesia1:namaWilayah>Bali</candi-indonesia1:namaWilayah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#BatuAndesit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#BatuAndesit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#MaterialBangunan"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Arjuna"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Badut"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Borobudur"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Cetho"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Gebang"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#GedongSongo"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Jago"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Jawi"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Jolotundo"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Kalasan"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Kidal"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Mendut"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Ngawen"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Pawon"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Prambanan"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Puntadewa"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sambisari"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Semar"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sembadra"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sewu"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Singosari"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Srikandi"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sukuh"/>
+        <candi-indonesia1:namaMaterial>Batu Andesit</candi-indonesia1:namaMaterial>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#BatuBata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#BatuBata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#MaterialBangunan"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Bahal"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#BajangRatu"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Bumiayu"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiAgung"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiLaras"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#MuaraTakus"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Tikus"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#WringinLawang"/>
+        <candi-indonesia1:namaMaterial>Batu Bata Merah</candi-indonesia1:namaMaterial>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#BatuKali -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#BatuKali">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#MaterialBangunan"/>
+        <candi-indonesia1:namaMaterial>Batu Kali</candi-indonesia1:namaMaterial>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#BaturPeripih -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#BaturPeripih">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#StrukturKaki"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Badut"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#GedongSongo"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Mendut"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Prambanan"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sambisari"/>
+        <candi-indonesia1:deskripsiKomponen>Bagian dasar pondasi candi yang memuat peripih atau tempat persembahan</candi-indonesia1:deskripsiKomponen>
+        <candi-indonesia1:namaKomponen>Batur Peripih</candi-indonesia1:namaKomponen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#BilikUtamaCandi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#BilikUtamaCandi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#StrukturTubuh"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Arjuna"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Badut"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#GedongSongo"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Kalasan"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Mendut"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Prambanan"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sambisari"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sewu"/>
+        <candi-indonesia1:deskripsiKomponen>Ruangan utama di dalam tubuh candi tempat bersemayamnya arca utama atau lingga-yoni</candi-indonesia1:deskripsiKomponen>
+        <candi-indonesia1:namaKomponen>Bilik Utama Candi</candi-indonesia1:namaKomponen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Blitar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Blitar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Kabupaten"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Penataran"/>
+        <candi-indonesia1:terletakDiProvinsi rdf:resource="http://www.semanticweb.org/candi-indonesia#JawaTimur"/>
+        <candi-indonesia1:namaWilayah>Blitar</candi-indonesia1:namaWilayah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Borobudur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Borobudur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiBuddha"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <candi-indonesia1:dibangunOlehRaja rdf:resource="http://www.semanticweb.org/candi-indonesia#Samaratungga"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe8"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatBorobudur"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Magelang"/>
+        <candi-indonesia1:memilikiRelief rdf:resource="http://www.semanticweb.org/candi-indonesia#Karmawibhangga"/>
+        <candi-indonesia1:memilikiStupa rdf:resource="http://www.semanticweb.org/candi-indonesia#StupaIndukBorobudur"/>
+        <candi-indonesia1:deskripsiCandi>Monumen Buddha Mahayana dengan sembilan tingkat teras dan relief naratif yang sangat panjang.</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Borobudur</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">825</candi-indonesia1:tahunBerdiri>
+        <candi-indonesia1:tinggiCandi rdf:datatype="http://www.w3.org/2001/XMLSchema#float">35.0</candi-indonesia1:tinggiCandi>
+        <candi-indonesia1:judulWikipedia>Borobudur</candi-indonesia1:judulWikipedia>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Bumiayu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Bumiayu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiSiwaBudha"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe9"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatBumiayu"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Pali"/>
+        <candi-indonesia1:deskripsiCandi>Kompleks percandian Hindu Siwa-Buddha di DAS Serayu</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Bumiayu</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">850</candi-indonesia1:tahunBerdiri>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#CandiAgung -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#CandiAgung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiHindu"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe14"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatCandiAgung"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Amuntai"/>
+        <candi-indonesia1:deskripsiCandi>Situs candi Hindu peninggalan Kerajaan Negara Dipa di Amuntai</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Candi Agung</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1350</candi-indonesia1:tahunBerdiri>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#CandiLaras -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#CandiLaras">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiHindu"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe9"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatCandiLaras"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Amuntai"/>
+        <candi-indonesia1:deskripsiCandi>Situs arkeologi sejarah purbakala di Kalimantan Selatan</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Candi Laras</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">850</candi-indonesia1:tahunBerdiri>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Cetho -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Cetho">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiHindu"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe14"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatCetho"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Karanganyar"/>
+        <candi-indonesia1:deskripsiCandi>Candi Hindu bercorak era akhir Majapahit di lereng Gunung Lawu</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Cetho</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1475</candi-indonesia1:tahunBerdiri>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#DIYogyakarta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#DIYogyakarta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Provinsi"/>
+        <candi-indonesia1:memilikiKabupaten rdf:resource="http://www.semanticweb.org/candi-indonesia#Sleman"/>
+        <candi-indonesia1:terletakDiPulau rdf:resource="http://www.semanticweb.org/candi-indonesia#Jawa"/>
+        <candi-indonesia1:namaWilayah>DI Yogyakarta</candi-indonesia1:namaWilayah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#DindingSelasar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#DindingSelasar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#StrukturTubuh"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Borobudur"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Penataran"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Plaosan"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Prambanan"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sambisari"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sewu"/>
+        <candi-indonesia1:deskripsiKomponen>Dinding luar tubuh candi atau pagar langkan yang membatasi lorong untuk pradaksina</candi-indonesia1:deskripsiKomponen>
+        <candi-indonesia1:namaKomponen>Dinding Selasar</candi-indonesia1:namaKomponen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Dwarapala -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Dwarapala">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Arca"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Plaosan"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sewu"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Singosari"/>
+        <candi-indonesia1:deskripsiKomponen>Arca penjaga pintu gerbang candi</candi-indonesia1:deskripsiKomponen>
+        <candi-indonesia1:namaKomponen>Dwarapala</candi-indonesia1:namaKomponen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Gebang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Gebang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiHindu"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe8"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatGebang"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sleman"/>
+        <candi-indonesia1:deskripsiCandi>Candi Hindu aliran Siwa di tepi Sungai Code, Sleman.</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Gebang</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">730</candi-indonesia1:tahunBerdiri>
+        <candi-indonesia1:tinggiCandi rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.8</candi-indonesia1:tinggiCandi>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#GedongSongo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#GedongSongo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiHindu"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe8"/>
+        <candi-indonesia1:memilikiKomponen rdf:resource="http://www.semanticweb.org/candi-indonesia#KakiCandiPersegi"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatGedongSongo"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Semarang"/>
+        <candi-indonesia1:deskripsiCandi>Kompleks bangunan candi Hindu di lereng Gunung Ungaran, Semarang</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Gedong Songo</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">740</candi-indonesia1:tahunBerdiri>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Gianyar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Gianyar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Kabupaten"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#GoaGajah"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#GunungKawi"/>
+        <candi-indonesia1:terletakDiProvinsi rdf:resource="http://www.semanticweb.org/candi-indonesia#Bali"/>
+        <candi-indonesia1:namaWilayah>Gianyar</candi-indonesia1:namaWilayah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#GoaGajah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#GoaGajah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiSiwaBudha"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe9"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatGoaGajah"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Gianyar"/>
+        <candi-indonesia1:deskripsiCandi>Situs gua pertapaan purbakala berlatar Hindu dan Buddha di Gianyar, Bali</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Goa Gajah</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">850</candi-indonesia1:tahunBerdiri>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#GunungKawi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#GunungKawi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiHindu"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe11"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatGunungKawi"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Gianyar"/>
+        <candi-indonesia1:deskripsiCandi>Kompleks candi tebing purba peninggalan sejarah di Gianyar, Bali</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Gunung Kawi</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</candi-indonesia1:tahunBerdiri>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Jago -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Jago">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPendharmaan"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiSiwaBudha"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe13"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatJago"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Malang"/>
+        <candi-indonesia1:deskripsiCandi>Candi pendharmaan Raja Wisnuwardhana dari Singhasari</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Jago</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1268</candi-indonesia1:tahunBerdiri>
+        <candi-indonesia1:tinggiCandi rdf:datatype="http://www.w3.org/2001/XMLSchema#float">9.5</candi-indonesia1:tinggiCandi>
+        <candi-indonesia1:judulWikipedia>Jago_Temple</candi-indonesia1:judulWikipedia>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Jambi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Jambi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Provinsi"/>
+        <candi-indonesia1:memilikiKabupaten rdf:resource="http://www.semanticweb.org/candi-indonesia#MuaroJambiKab"/>
+        <candi-indonesia1:terletakDiPulau rdf:resource="http://www.semanticweb.org/candi-indonesia#Sumatra"/>
+        <candi-indonesia1:namaWilayah>Jambi</candi-indonesia1:namaWilayah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Jataka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Jataka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Relief"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Borobudur"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Mendut"/>
+        <candi-indonesia1:deskripsiKomponen>Menggambarkan kehidupan lampau Sang Buddha dalam wujud manusia dan hewan</candi-indonesia1:deskripsiKomponen>
+        <candi-indonesia1:judulCeritaRelief>Jataka</candi-indonesia1:judulCeritaRelief>
+        <candi-indonesia1:namaKomponen>Jataka</candi-indonesia1:namaKomponen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Jawa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Jawa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Pulau"/>
+        <candi-indonesia1:memilikiKabupaten rdf:resource="http://www.semanticweb.org/candi-indonesia#Blitar"/>
+        <candi-indonesia1:memilikiKabupaten rdf:resource="http://www.semanticweb.org/candi-indonesia#Malang"/>
+        <candi-indonesia1:memilikiKabupaten rdf:resource="http://www.semanticweb.org/candi-indonesia#Mojokerto"/>
+        <candi-indonesia1:memilikiProvinsi rdf:resource="http://www.semanticweb.org/candi-indonesia#DIYogyakarta"/>
+        <candi-indonesia1:memilikiProvinsi rdf:resource="http://www.semanticweb.org/candi-indonesia#JawaTengah"/>
+        <candi-indonesia1:memilikiProvinsi rdf:resource="http://www.semanticweb.org/candi-indonesia#JawaTimur"/>
+        <candi-indonesia1:terletakDiPulau rdf:resource="http://www.semanticweb.org/candi-indonesia#Jawa"/>
+        <candi-indonesia1:namaWilayah>Jawa</candi-indonesia1:namaWilayah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#JawaTengah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#JawaTengah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Provinsi"/>
+        <candi-indonesia1:memilikiKabupaten rdf:resource="http://www.semanticweb.org/candi-indonesia#Karanganyar"/>
+        <candi-indonesia1:memilikiKabupaten rdf:resource="http://www.semanticweb.org/candi-indonesia#Klaten"/>
+        <candi-indonesia1:memilikiKabupaten rdf:resource="http://www.semanticweb.org/candi-indonesia#Magelang"/>
+        <candi-indonesia1:memilikiKabupaten rdf:resource="http://www.semanticweb.org/candi-indonesia#Semarang"/>
+        <candi-indonesia1:memilikiKabupaten rdf:resource="http://www.semanticweb.org/candi-indonesia#Wonosobo"/>
+        <candi-indonesia1:terletakDiPulau rdf:resource="http://www.semanticweb.org/candi-indonesia#Jawa"/>
+        <candi-indonesia1:namaWilayah>Jawa Tengah</candi-indonesia1:namaWilayah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#JawaTimur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#JawaTimur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Provinsi"/>
+        <candi-indonesia1:memilikiKabupaten rdf:resource="http://www.semanticweb.org/candi-indonesia#Blitar"/>
+        <candi-indonesia1:memilikiKabupaten rdf:resource="http://www.semanticweb.org/candi-indonesia#Malang"/>
+        <candi-indonesia1:memilikiKabupaten rdf:resource="http://www.semanticweb.org/candi-indonesia#Mojokerto"/>
+        <candi-indonesia1:terletakDiPulau rdf:resource="http://www.semanticweb.org/candi-indonesia#Jawa"/>
+        <candi-indonesia1:namaWilayah>Jawa Timur</candi-indonesia1:namaWilayah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Jawi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Jawi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiSiwaBudha"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe13"/>
+        <candi-indonesia1:memilikiKomponen rdf:resource="http://www.semanticweb.org/candi-indonesia#AtapRatna"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatJawi"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Malang"/>
+        <candi-indonesia1:deskripsiCandi>Candi Siwa-Buddha peninggalan Kerajaan Singhasari</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Jawi</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1300</candi-indonesia1:tahunBerdiri>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Jolotundo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Jolotundo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiHindu"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPetirtaan"/>
+        <candi-indonesia1:fungsiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Jolotundo"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatJolotundo"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Mojokerto"/>
+        <candi-indonesia1:deskripsiCandi>Candi petirtaan kuno peninggalan Raja Udayana</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Jolotundo</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">977</candi-indonesia1:tahunBerdiri>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KakiCandiPersegi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KakiCandiPersegi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#StrukturKaki"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Arjuna"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Badut"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#GedongSongo"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Kidal"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Mendut"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Penataran"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Prambanan"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sambisari"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Singosari"/>
+        <candi-indonesia1:deskripsiKomponen>Struktur kaki candi dengan denah dasar berbentuk bujur sangkar atau persegi</candi-indonesia1:deskripsiKomponen>
+        <candi-indonesia1:namaKomponen>Kaki Candi Persegi</candi-indonesia1:namaKomponen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KalaMakara -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KalaMakara">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Arca"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Borobudur"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Kalasan"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Mendut"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Prambanan"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sambisari"/>
+        <candi-indonesia1:deskripsiKomponen>Hiasan wajah raksasa Kala dan hewan mitologi Makara pada ambang pintu candi</candi-indonesia1:deskripsiKomponen>
+        <candi-indonesia1:namaKomponen>Kala Makara</candi-indonesia1:namaKomponen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Kalasan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Kalasan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiBuddha"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <candi-indonesia1:dibangunOlehRaja rdf:resource="http://www.semanticweb.org/candi-indonesia#RakaiPikatan"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe8"/>
+        <candi-indonesia1:didukungOlehPrasasti rdf:resource="http://www.semanticweb.org/candi-indonesia#PrasastiKalasan"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatKalasan"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sleman"/>
+        <candi-indonesia1:deskripsiCandi>Candi Buddha tertua di Yogyakarta yang didirikan untuk memuja Dewi Tara</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Kalasan</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">778</candi-indonesia1:tahunBerdiri>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Kalimantan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Kalimantan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Pulau"/>
+        <candi-indonesia1:memilikiProvinsi rdf:resource="http://www.semanticweb.org/candi-indonesia#KalimantanSelatan"/>
+        <candi-indonesia1:namaWilayah>Kalimantan</candi-indonesia1:namaWilayah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KalimantanSelatan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KalimantanSelatan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Provinsi"/>
+        <candi-indonesia1:memilikiKabupaten rdf:resource="http://www.semanticweb.org/candi-indonesia#Amuntai"/>
+        <candi-indonesia1:memilikiKabupaten rdf:resource="http://www.semanticweb.org/candi-indonesia#TanahBumbu"/>
+        <candi-indonesia1:terletakDiPulau rdf:resource="http://www.semanticweb.org/candi-indonesia#Kalimantan"/>
+        <candi-indonesia1:namaWilayah>Kalimantan Selatan</candi-indonesia1:namaWilayah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Kampar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Kampar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Kabupaten"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#MuaraTakus"/>
+        <candi-indonesia1:terletakDiProvinsi rdf:resource="http://www.semanticweb.org/candi-indonesia#Riau"/>
+        <candi-indonesia1:namaWilayah>Kampar</candi-indonesia1:namaWilayah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Karanganyar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Karanganyar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Kabupaten"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Cetho"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sukuh"/>
+        <candi-indonesia1:terletakDiProvinsi rdf:resource="http://www.semanticweb.org/candi-indonesia#JawaTengah"/>
+        <candi-indonesia1:namaWilayah>Karanganyar</candi-indonesia1:namaWilayah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Karmawibhangga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Karmawibhangga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Relief"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Borobudur"/>
+        <candi-indonesia1:deskripsiKomponen>Menggambarkan hukum sebab akibat (karmaphala)</candi-indonesia1:deskripsiKomponen>
+        <candi-indonesia1:judulCeritaRelief>Karmawibhangga</candi-indonesia1:judulCeritaRelief>
+        <candi-indonesia1:namaKomponen>Karmawibhangga</candi-indonesia1:namaKomponen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Kartanegara -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Kartanegara">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Raja"/>
+        <candi-indonesia1:berasalDariDinasti rdf:resource="http://www.semanticweb.org/candi-indonesia#Singasari"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Singosari"/>
+        <candi-indonesia1:namaRaja>Kertanegara</candi-indonesia1:namaRaja>
+        <candi-indonesia1:tahunAkhirMemerintah rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1292</candi-indonesia1:tahunAkhirMemerintah>
+        <candi-indonesia1:tahunMulaiMemerintah rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1268</candi-indonesia1:tahunMulaiMemerintah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Kediri -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Kediri">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Dinasti"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Penataran"/>
+        <candi-indonesia1:namaDinasti>Kediri</candi-indonesia1:namaDinasti>
+        <candi-indonesia1:tahunAkhirDinasti rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1222</candi-indonesia1:tahunAkhirDinasti>
+        <candi-indonesia1:tahunAwalDinasti rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1042</candi-indonesia1:tahunAwalDinasti>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Kidal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Kidal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiHindu"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPendharmaan"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe13"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatKidal"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Malang"/>
+        <candi-indonesia1:deskripsiCandi>Candi pendharmaan Anusapati Raja Singhasari</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Kidal</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1248</candi-indonesia1:tahunBerdiri>
+        <candi-indonesia1:tinggiCandi rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.5</candi-indonesia1:tinggiCandi>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Klaten -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Klaten">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Kabupaten"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Plaosan"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sewu"/>
+        <candi-indonesia1:terletakDiProvinsi rdf:resource="http://www.semanticweb.org/candi-indonesia#JawaTengah"/>
+        <candi-indonesia1:namaWilayah>Klaten</candi-indonesia1:namaWilayah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatArjuna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatArjuna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#Arjuna"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">109.9078</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-7.2058</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatBadut -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatBadut">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#Badut"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">112.6083</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-7.9575</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatBahal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatBahal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#Bahal"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">99.7317</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.4067</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatBajangRatu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatBajangRatu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#BajangRatu"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">112.3813</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-7.5542</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatBorobudur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatBorobudur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#Borobudur"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">110.2038</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-7.6079</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatBumiayu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatBumiayu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#Bumiayu"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">104.0841</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-3.4012</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatCandiAgung -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatCandiAgung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiAgung"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">115.2475</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-2.4136</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatCandiLaras -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatCandiLaras">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiLaras"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">115.0118</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-2.9304</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatCetho -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatCetho">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#Cetho"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">111.1578</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-7.5956</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatGebang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatGebang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#Gebang"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">110.4217</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-7.7562</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatGedongSongo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatGedongSongo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#GedongSongo"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">110.3421</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-7.2052</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatGoaGajah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatGoaGajah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#GoaGajah"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">115.2869</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-8.5233</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatGunungKawi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatGunungKawi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#GunungKawi"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">115.3128</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-8.4231</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatJago -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatJago">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#Jago"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">112.7642</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-8.0064</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatJawi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatJawi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#Jawi"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">112.6703</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-7.6617</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatJolotundo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatJolotundo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#Jolotundo"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">112.5936</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-7.6044</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatKalasan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatKalasan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#Kalasan"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">110.4725</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-7.7672</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatKidal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatKidal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#Kidal"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">112.7103</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-8.0244</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatMendut -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatMendut">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#Mendut"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">110.2297</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-7.6047</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatMuaraTakus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatMuaraTakus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#MuaraTakus"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">100.6403</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.3347</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatMuaroJambi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatMuaroJambi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">103.6644</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-1.4786</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatNgawen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatNgawen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#Ngawen"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">110.2728</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-7.6083</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatPawon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatPawon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#Pawon"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">110.2189</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-7.6061</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatPenataran -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatPenataran">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#Penataran"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">112.2094</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-8.0164</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatPlaosan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatPlaosan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#Plaosan"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">110.5042</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-7.7431</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatPrambanan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatPrambanan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#Prambanan"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">110.4914</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-7.752</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatPuntadewa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatPuntadewa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#Puntadewa"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">109.9079</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-7.2056</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatSambisari -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatSambisari">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#Sambisari"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">110.4472</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-7.7625</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatSemar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatSemar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#Semar"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">109.9077</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-7.2057</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatSembadra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatSembadra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#Sembadra"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">109.908</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-7.2059</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatSewu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatSewu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#Sewu"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">110.4931</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-7.7439</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatSingosari -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatSingosari">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#Singosari"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">112.6639</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-7.8883</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatSrikandi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatSrikandi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#Srikandi"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">109.9076</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-7.2055</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatSukuh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatSukuh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#Sukuh"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">111.1317</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-7.6272</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatTikus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatTikus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#Tikus"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">112.3817</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-7.5606</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#KoordinatWringinLawang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#KoordinatWringinLawang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Koordinat"/>
+        <candi-indonesia1:koordinatDari rdf:resource="http://www.semanticweb.org/candi-indonesia#WringinLawang"/>
+        <candi-indonesia1:nilaiBujur rdf:datatype="http://www.w3.org/2001/XMLSchema#float">112.3789</candi-indonesia1:nilaiBujur>
+        <candi-indonesia1:nilaiLintang rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-7.545</candi-indonesia1:nilaiLintang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Lalitavistara -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Lalitavistara">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Relief"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Borobudur"/>
+        <candi-indonesia1:deskripsiKomponen>Menggambarkan riwayat kelahiran hingga pencerahan Sang Buddha Gautama</candi-indonesia1:deskripsiKomponen>
+        <candi-indonesia1:judulCeritaRelief>Lalitavistara</candi-indonesia1:judulCeritaRelief>
+        <candi-indonesia1:namaKomponen>Lalitavistara</candi-indonesia1:namaKomponen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#LinggaYoni -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#LinggaYoni">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Arca"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Badut"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Cetho"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Prambanan"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sambisari"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sukuh"/>
+        <candi-indonesia1:deskripsiKomponen>Simbol kesuburan dan perwujudan Siwa dan Parwati</candi-indonesia1:deskripsiKomponen>
+        <candi-indonesia1:namaKomponen>Lingga Yoni</candi-indonesia1:namaKomponen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Magelang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Magelang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Kabupaten"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Borobudur"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Mendut"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Ngawen"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Pawon"/>
+        <candi-indonesia1:terletakDiProvinsi rdf:resource="http://www.semanticweb.org/candi-indonesia#JawaTengah"/>
+        <candi-indonesia1:namaWilayah>Magelang</candi-indonesia1:namaWilayah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Majapahit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Majapahit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Dinasti"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#BajangRatu"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Cetho"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sukuh"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Tikus"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#WringinLawang"/>
+        <candi-indonesia1:namaDinasti>Majapahit</candi-indonesia1:namaDinasti>
+        <candi-indonesia1:tahunAkhirDinasti rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1527</candi-indonesia1:tahunAkhirDinasti>
+        <candi-indonesia1:tahunAwalDinasti rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1293</candi-indonesia1:tahunAwalDinasti>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Malang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Malang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Kabupaten"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Badut"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Jago"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Kidal"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Singosari"/>
+        <candi-indonesia1:terletakDiProvinsi rdf:resource="http://www.semanticweb.org/candi-indonesia#JawaTimur"/>
+        <candi-indonesia1:namaWilayah>Malang</candi-indonesia1:namaWilayah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#MataramKuno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#MataramKuno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Dinasti"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Arjuna"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#GedongSongo"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Prambanan"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sambisari"/>
+        <candi-indonesia1:namaDinasti>Mataram Kuno</candi-indonesia1:namaDinasti>
+        <candi-indonesia1:tahunAkhirDinasti rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1006</candi-indonesia1:tahunAkhirDinasti>
+        <candi-indonesia1:tahunAwalDinasti rdf:datatype="http://www.w3.org/2001/XMLSchema#int">732</candi-indonesia1:tahunAwalDinasti>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#MelayuKuno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#MelayuKuno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Dinasti"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Borobudur"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Kalasan"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Mendut"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Pawon"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Plaosan"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sewu"/>
+        <candi-indonesia1:namaDinasti>Melayu Kuno</candi-indonesia1:namaDinasti>
+        <candi-indonesia1:tahunAkhirDinasti rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1347</candi-indonesia1:tahunAkhirDinasti>
+        <candi-indonesia1:tahunAwalDinasti rdf:datatype="http://www.w3.org/2001/XMLSchema#int">600</candi-indonesia1:tahunAwalDinasti>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Mendut -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Mendut">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiBuddha"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <candi-indonesia1:dibangunOlehRaja rdf:resource="http://www.semanticweb.org/candi-indonesia#Samaratungga"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe9"/>
+        <candi-indonesia1:memilikiKomponen rdf:resource="http://www.semanticweb.org/candi-indonesia#BilikUtamaCandi"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatMendut"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Magelang"/>
+        <candi-indonesia1:memilikiStupa rdf:resource="http://www.semanticweb.org/candi-indonesia#StupaIndukBorobudur"/>
+        <candi-indonesia1:sezamanDengan rdf:resource="http://www.semanticweb.org/candi-indonesia#Pawon"/>
+        <candi-indonesia1:deskripsiCandi>Candi Buddha peninggalan Wangsa Syailendra di Magelang</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Mendut</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">824</candi-indonesia1:tahunBerdiri>
+        <candi-indonesia1:tinggiCandi rdf:datatype="http://www.w3.org/2001/XMLSchema#float">26.4</candi-indonesia1:tinggiCandi>
+        <candi-indonesia1:judulWikipedia>Mendut</candi-indonesia1:judulWikipedia>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Mojokerto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Mojokerto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Kabupaten"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#BajangRatu"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Jolotundo"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Tikus"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#WringinLawang"/>
+        <candi-indonesia1:terletakDiProvinsi rdf:resource="http://www.semanticweb.org/candi-indonesia#JawaTimur"/>
+        <candi-indonesia1:namaWilayah>Mojokerto</candi-indonesia1:namaWilayah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#MuaraTakus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#MuaraTakus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiBuddha"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe11"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatMuaraTakus"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Kampar"/>
+        <candi-indonesia1:memilikiStupa rdf:resource="http://www.semanticweb.org/candi-indonesia#StupaBerlubang"/>
+        <candi-indonesia1:deskripsiCandi>Situs candi Buddha bersejarah di Kabupaten Kampar, Riau</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Muara Takus</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1050</candi-indonesia1:tahunBerdiri>
+        <candi-indonesia1:tinggiCandi rdf:datatype="http://www.w3.org/2001/XMLSchema#float">11.5</candi-indonesia1:tinggiCandi>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#MuaroJambi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#MuaroJambi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiBuddha"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe11"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatMuaroJambi"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#MuaroJambiKab"/>
+        <candi-indonesia1:deskripsiCandi>Kompleks percandian agama Buddha terluas di Pulau Sumatera</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Muaro Jambi</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</candi-indonesia1:tahunBerdiri>
+        <candi-indonesia1:judulWikipedia>Muaro_Jambi_Temple_Compounds</candi-indonesia1:judulWikipedia>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#MuaroJambiKab -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#MuaroJambiKab">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Kabupaten"/>
+        <candi-indonesia1:terletakDiProvinsi rdf:resource="http://www.semanticweb.org/candi-indonesia#Jambi"/>
+        <candi-indonesia1:namaWilayah>Muaro Jambi</candi-indonesia1:namaWilayah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Ngawen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Ngawen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiBuddha"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe8"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatNgawen"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Magelang"/>
+        <candi-indonesia1:deskripsiCandi>Candi Buddha dengan hiasan arca singa di sudut bangunannya di Magelang</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Ngawen</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">780</candi-indonesia1:tahunBerdiri>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#PadangLawas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#PadangLawas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Kabupaten"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Bahal"/>
+        <candi-indonesia1:terletakDiProvinsi rdf:resource="http://www.semanticweb.org/candi-indonesia#SumateraUtara"/>
+        <candi-indonesia1:namaWilayah>Padang Lawas</candi-indonesia1:namaWilayah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Pali -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Pali">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Kabupaten"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Bumiayu"/>
+        <candi-indonesia1:terletakDiProvinsi rdf:resource="http://www.semanticweb.org/candi-indonesia#SumateraSelatan"/>
+        <candi-indonesia1:namaWilayah>Pali</candi-indonesia1:namaWilayah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Pawon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Pawon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiBuddha"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe8"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatPawon"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Magelang"/>
+        <candi-indonesia1:sezamanDengan rdf:resource="http://www.semanticweb.org/candi-indonesia#Mendut"/>
+        <candi-indonesia1:deskripsiCandi>Candi Buddha yang terletak di antara Candi Borobudur dan Candi Mendut di Magelang</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Pawon</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">824</candi-indonesia1:tahunBerdiri>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Penataran -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Penataran">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiHindu"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe13"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatPenataran"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Blitar"/>
+        <candi-indonesia1:deskripsiCandi>Kompleks candi Hindu terbesar di Jawa Timur peninggalan era Kediri hingga Majapahit</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Penataran</candi-indonesia1:namaCandi>
+        <candi-indonesia1:judulWikipedia>Penataran</candi-indonesia1:judulWikipedia>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Plaosan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Plaosan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiBuddha"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <candi-indonesia1:berdekatanDengan rdf:resource="http://www.semanticweb.org/candi-indonesia#Prambanan"/>
+        <candi-indonesia1:dibangunOlehRaja rdf:resource="http://www.semanticweb.org/candi-indonesia#RakaiPikatan"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe9"/>
+        <candi-indonesia1:didukungOlehPrasasti rdf:resource="http://www.semanticweb.org/candi-indonesia#PrasastiPlaosan"/>
+        <candi-indonesia1:memilikiKomponen rdf:resource="http://www.semanticweb.org/candi-indonesia#AtapRatna"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatPlaosan"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Klaten"/>
+        <candi-indonesia1:deskripsiCandi>Kompleks candi kembar Buddha di Klaten</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Plaosan</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">850</candi-indonesia1:tahunBerdiri>
+        <candi-indonesia1:tinggiCandi rdf:datatype="http://www.w3.org/2001/XMLSchema#float">22.5</candi-indonesia1:tinggiCandi>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Prambanan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Prambanan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiHindu"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <candi-indonesia1:dibangunOlehRaja rdf:resource="http://www.semanticweb.org/candi-indonesia#RakaiPikatan"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe9"/>
+        <candi-indonesia1:memilikiArca rdf:resource="http://www.semanticweb.org/candi-indonesia#ArcaSiwaMahadewa"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatPrambanan"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sleman"/>
+        <candi-indonesia1:memilikiRaja rdf:resource="http://www.semanticweb.org/candi-indonesia#RakaiPikatan"/>
+        <candi-indonesia1:memilikiRelief rdf:resource="http://www.semanticweb.org/candi-indonesia#Ramayana"/>
+        <candi-indonesia1:satuKompleksDengan rdf:resource="http://www.semanticweb.org/candi-indonesia#Sewu"/>
+        <candi-indonesia1:deskripsiCandi>Kompleks candi Hindu terbesar di Indonesia, didedikasikan bagi Trimurti dengan candi Siwa yang menjulang di tengah.</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Prambanan</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunAkhirDinasti rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">930</candi-indonesia1:tahunAkhirDinasti>
+        <candi-indonesia1:tahunAwalDinasti rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">850</candi-indonesia1:tahunAwalDinasti>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">850</candi-indonesia1:tahunBerdiri>
+        <candi-indonesia1:tinggiCandi rdf:datatype="http://www.w3.org/2001/XMLSchema#float">47.0</candi-indonesia1:tinggiCandi>
+        <candi-indonesia1:judulWikipedia>Prambanan</candi-indonesia1:judulWikipedia>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#PrasastiCanggal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#PrasastiCanggal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Prasasti"/>
+        <candi-indonesia1:prasastiMenyebutkanRaja rdf:resource="http://www.semanticweb.org/candi-indonesia#SanjayaRaja"/>
+        <candi-indonesia1:isiRingkasPrasasti>Mencatat pendirian lingga oleh Raja Sanjaya di desa Kunjarakunja</candi-indonesia1:isiRingkasPrasasti>
+        <candi-indonesia1:namaPrasasti>Prasasti Canggal</candi-indonesia1:namaPrasasti>
+        <candi-indonesia1:tahunPrasasti rdf:datatype="http://www.w3.org/2001/XMLSchema#int">732</candi-indonesia1:tahunPrasasti>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#PrasastiKalasan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#PrasastiKalasan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Prasasti"/>
+        <candi-indonesia1:mendukungCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Kalasan"/>
+        <candi-indonesia1:prasastiMenyebutkanRaja rdf:resource="http://www.semanticweb.org/candi-indonesia#RakaiPanangkaran"/>
+        <candi-indonesia1:isiRingkasPrasasti>Mencatat pembangunan tempat suci untuk Dewi Tara dan vihara bagi para bhikshu</candi-indonesia1:isiRingkasPrasasti>
+        <candi-indonesia1:namaPrasasti>Prasasti Kalasan</candi-indonesia1:namaPrasasti>
+        <candi-indonesia1:tahunPrasasti rdf:datatype="http://www.w3.org/2001/XMLSchema#int">778</candi-indonesia1:tahunPrasasti>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#PrasastiKedukanBukit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#PrasastiKedukanBukit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Prasasti"/>
+        <candi-indonesia1:dikeluarkanOlehDinasti rdf:resource="http://www.semanticweb.org/candi-indonesia#Sriwijaya"/>
+        <candi-indonesia1:isiRingkasPrasasti>Mencatat perjalanan suci (siddhayatra) Dapunta Hyang dan berdirinya Kedatuan Sriwijaya</candi-indonesia1:isiRingkasPrasasti>
+        <candi-indonesia1:namaPrasasti>Prasasti Kedukan Bukit</candi-indonesia1:namaPrasasti>
+        <candi-indonesia1:tahunPrasasti rdf:datatype="http://www.w3.org/2001/XMLSchema#int">683</candi-indonesia1:tahunPrasasti>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#PrasastiPlaosan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#PrasastiPlaosan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Prasasti"/>
+        <candi-indonesia1:mendukungCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Plaosan"/>
+        <candi-indonesia1:prasastiMenyebutkanRaja rdf:resource="http://www.semanticweb.org/candi-indonesia#RakaiPikatan"/>
+        <candi-indonesia1:isiRingkasPrasasti>Mencatat pembangunan candi oleh Rakai Pikatan dan Pramodhawardhani</candi-indonesia1:isiRingkasPrasasti>
+        <candi-indonesia1:namaPrasasti>Prasasti Plaosan</candi-indonesia1:namaPrasasti>
+        <candi-indonesia1:tahunPrasasti rdf:datatype="http://www.w3.org/2001/XMLSchema#int">850</candi-indonesia1:tahunPrasasti>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#PrasastiTalangTuo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#PrasastiTalangTuo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Prasasti"/>
+        <candi-indonesia1:dikeluarkanOlehDinasti rdf:resource="http://www.semanticweb.org/candi-indonesia#Sriwijaya"/>
+        <candi-indonesia1:mendukungCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#MuaraTakus"/>
+        <candi-indonesia1:isiRingkasPrasasti>Mencatat pembuatan Taman Sriksetra oleh Dapunta Hyang Sri Jayanasa</candi-indonesia1:isiRingkasPrasasti>
+        <candi-indonesia1:namaPrasasti>Prasasti Talang Tuo</candi-indonesia1:namaPrasasti>
+        <candi-indonesia1:tahunPrasasti rdf:datatype="http://www.w3.org/2001/XMLSchema#int">684</candi-indonesia1:tahunPrasasti>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Puntadewa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Puntadewa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiHindu"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe8"/>
+        <candi-indonesia1:memilikiKomponen rdf:resource="http://www.semanticweb.org/candi-indonesia#KakiCandiPersegi"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatPuntadewa"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Wonosobo"/>
+        <candi-indonesia1:satuKompleksDengan rdf:resource="http://www.semanticweb.org/candi-indonesia#Arjuna"/>
+        <candi-indonesia1:deskripsiCandi>Candi Hindu dengan struktur tertinggi di kelompok Arjuna Dieng</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Puntadewa</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">808</candi-indonesia1:tahunBerdiri>
+        <candi-indonesia1:tinggiCandi rdf:datatype="http://www.w3.org/2001/XMLSchema#float">11.9</candi-indonesia1:tinggiCandi>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#RakaiPanangkaran -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#RakaiPanangkaran">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Raja"/>
+        <candi-indonesia1:berasalDariDinasti rdf:resource="http://www.semanticweb.org/candi-indonesia#Syailendra"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Kalasan"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sewu"/>
+        <candi-indonesia1:namaRaja>Rakai Panangkaran</candi-indonesia1:namaRaja>
+        <candi-indonesia1:tahunAkhirMemerintah rdf:datatype="http://www.w3.org/2001/XMLSchema#int">775</candi-indonesia1:tahunAkhirMemerintah>
+        <candi-indonesia1:tahunMulaiMemerintah rdf:datatype="http://www.w3.org/2001/XMLSchema#int">760</candi-indonesia1:tahunMulaiMemerintah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#RakaiPikatan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#RakaiPikatan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Raja"/>
+        <candi-indonesia1:berasalDariDinasti rdf:resource="http://www.semanticweb.org/candi-indonesia#Sanjaya"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Plaosan"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Prambanan"/>
+        <candi-indonesia1:namaRaja>Rakai Pikatan</candi-indonesia1:namaRaja>
+        <candi-indonesia1:tahunAkhirMemerintah rdf:datatype="http://www.w3.org/2001/XMLSchema#int">850</candi-indonesia1:tahunAkhirMemerintah>
+        <candi-indonesia1:tahunMulaiMemerintah rdf:datatype="http://www.w3.org/2001/XMLSchema#int">838</candi-indonesia1:tahunMulaiMemerintah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Ramayana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Ramayana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Relief"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Penataran"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Prambanan"/>
+        <candi-indonesia1:deskripsiKomponen>Kisah kepahlawanan Rama dan Shinta</candi-indonesia1:deskripsiKomponen>
+        <candi-indonesia1:judulCeritaRelief>Ramayana</candi-indonesia1:judulCeritaRelief>
+        <candi-indonesia1:namaKomponen>Ramayana</candi-indonesia1:namaKomponen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Riau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Riau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Provinsi"/>
+        <candi-indonesia1:memilikiKabupaten rdf:resource="http://www.semanticweb.org/candi-indonesia#Kampar"/>
+        <candi-indonesia1:terletakDiPulau rdf:resource="http://www.semanticweb.org/candi-indonesia#Sumatra"/>
+        <candi-indonesia1:namaWilayah>Riau</candi-indonesia1:namaWilayah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Samaratungga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Samaratungga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Raja"/>
+        <candi-indonesia1:berasalDariDinasti rdf:resource="http://www.semanticweb.org/candi-indonesia#Syailendra"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Borobudur"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Mendut"/>
+        <candi-indonesia1:namaRaja>Samaratungga</candi-indonesia1:namaRaja>
+        <candi-indonesia1:tahunAkhirMemerintah rdf:datatype="http://www.w3.org/2001/XMLSchema#int">833</candi-indonesia1:tahunAkhirMemerintah>
+        <candi-indonesia1:tahunMulaiMemerintah rdf:datatype="http://www.w3.org/2001/XMLSchema#int">812</candi-indonesia1:tahunMulaiMemerintah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Sambisari -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Sambisari">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiHindu"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe9"/>
+        <candi-indonesia1:memilikiKomponen rdf:resource="http://www.semanticweb.org/candi-indonesia#BilikUtamaCandi"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatSambisari"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sleman"/>
+        <candi-indonesia1:deskripsiCandi>Candi Hindu corak Siwa yang terletak di bawah permukaan tanah di Sleman</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Sambisari</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">812</candi-indonesia1:tahunBerdiri>
+        <candi-indonesia1:tinggiCandi rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.5</candi-indonesia1:tinggiCandi>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Sanjaya -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Sanjaya">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Dinasti"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Arjuna"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Badut"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Gebang"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#GedongSongo"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Prambanan"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sambisari"/>
+        <candi-indonesia1:namaDinasti>Sanjaya</candi-indonesia1:namaDinasti>
+        <candi-indonesia1:tahunAkhirDinasti rdf:datatype="http://www.w3.org/2001/XMLSchema#int">928</candi-indonesia1:tahunAkhirDinasti>
+        <candi-indonesia1:tahunAwalDinasti rdf:datatype="http://www.w3.org/2001/XMLSchema#int">732</candi-indonesia1:tahunAwalDinasti>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#SanjayaRaja -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#SanjayaRaja">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Raja"/>
+        <candi-indonesia1:berasalDariDinasti rdf:resource="http://www.semanticweb.org/candi-indonesia#Sanjaya"/>
+        <candi-indonesia1:namaRaja>Sanjaya</candi-indonesia1:namaRaja>
+        <candi-indonesia1:tahunAkhirMemerintah rdf:datatype="http://www.w3.org/2001/XMLSchema#int">760</candi-indonesia1:tahunAkhirMemerintah>
+        <candi-indonesia1:tahunMulaiMemerintah rdf:datatype="http://www.w3.org/2001/XMLSchema#int">732</candi-indonesia1:tahunMulaiMemerintah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Semar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Semar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiHindu"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe8"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatSemar"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Wonosobo"/>
+        <candi-indonesia1:satuKompleksDengan rdf:resource="http://www.semanticweb.org/candi-indonesia#Arjuna"/>
+        <candi-indonesia1:deskripsiCandi>Candi perwara atau pendamping di Kompleks Dieng</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Semar</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">805</candi-indonesia1:tahunBerdiri>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Semarang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Semarang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Kabupaten"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#GedongSongo"/>
+        <candi-indonesia1:terletakDiProvinsi rdf:resource="http://www.semanticweb.org/candi-indonesia#JawaTengah"/>
+        <candi-indonesia1:namaWilayah>Semarang</candi-indonesia1:namaWilayah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Sembadra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Sembadra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiHindu"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe8"/>
+        <candi-indonesia1:memilikiKomponen rdf:resource="http://www.semanticweb.org/candi-indonesia#KakiCandiPersegi"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatSembadra"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Wonosobo"/>
+        <candi-indonesia1:satuKompleksDengan rdf:resource="http://www.semanticweb.org/candi-indonesia#Arjuna"/>
+        <candi-indonesia1:deskripsiCandi>Candi Hindu di Kompleks Dieng, Wonosobo</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Sembadra</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">810</candi-indonesia1:tahunBerdiri>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Sewu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Sewu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiBuddha"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <candi-indonesia1:dibangunOlehRaja rdf:resource="http://www.semanticweb.org/candi-indonesia#RakaiPanangkaran"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe8"/>
+        <candi-indonesia1:memilikiArca rdf:resource="http://www.semanticweb.org/candi-indonesia#Dwarapala"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatSewu"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Klaten"/>
+        <candi-indonesia1:satuKompleksDengan rdf:resource="http://www.semanticweb.org/candi-indonesia#Prambanan"/>
+        <candi-indonesia1:jumlahCandiDalamKompleks rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">249</candi-indonesia1:jumlahCandiDalamKompleks>
+        <candi-indonesia1:deskripsiCandi>Kompleks Buddha dengan satu candi induk dikelilingi ratusan candi perwara berpola mandala.</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Sewu</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">792</candi-indonesia1:tahunBerdiri>
+        <candi-indonesia1:judulWikipedia>Sewu</candi-indonesia1:judulWikipedia>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Singasari -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Singasari">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Dinasti"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Jago"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Jawi"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Kidal"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Singosari"/>
+        <candi-indonesia1:namaDinasti>Singasari</candi-indonesia1:namaDinasti>
+        <candi-indonesia1:tahunAkhirDinasti rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1292</candi-indonesia1:tahunAkhirDinasti>
+        <candi-indonesia1:tahunAwalDinasti rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1222</candi-indonesia1:tahunAwalDinasti>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Singosari -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Singosari">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiSiwaBudha"/>
+        <candi-indonesia1:dibangunOlehRaja rdf:resource="http://www.semanticweb.org/candi-indonesia#Kartanegara"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe13"/>
+        <candi-indonesia1:memilikiArca rdf:resource="http://www.semanticweb.org/candi-indonesia#Dwarapala"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatSingosari"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Malang"/>
+        <candi-indonesia1:deskripsiCandi>Candi peninggalan Singhasari tempat pendharmaan Raja Kertanegara</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Singosari</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1300</candi-indonesia1:tahunBerdiri>
+        <candi-indonesia1:tinggiCandi rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15.0</candi-indonesia1:tinggiCandi>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Sleman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Sleman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Kabupaten"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Gebang"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Kalasan"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Prambanan"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sambisari"/>
+        <candi-indonesia1:terletakDiProvinsi rdf:resource="http://www.semanticweb.org/candi-indonesia#DIYogyakarta"/>
+        <candi-indonesia1:namaWilayah>Sleman</candi-indonesia1:namaWilayah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Srikandi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Srikandi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiHindu"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe8"/>
+        <candi-indonesia1:memilikiKomponen rdf:resource="http://www.semanticweb.org/candi-indonesia#KakiCandiPersegi"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatSrikandi"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Wonosobo"/>
+        <candi-indonesia1:satuKompleksDengan rdf:resource="http://www.semanticweb.org/candi-indonesia#Arjuna"/>
+        <candi-indonesia1:deskripsiCandi>Candi Hindu kecil di Kompleks Dieng, Wonosobo</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Srikandi</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">800</candi-indonesia1:tahunBerdiri>
+        <candi-indonesia1:tinggiCandi rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.8</candi-indonesia1:tinggiCandi>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Sriwijaya -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Sriwijaya">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Dinasti"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Bahal"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#MuaraTakus"/>
+        <candi-indonesia1:namaDinasti>Sriwijaya</candi-indonesia1:namaDinasti>
+        <candi-indonesia1:tahunAkhirDinasti rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1377</candi-indonesia1:tahunAkhirDinasti>
+        <candi-indonesia1:tahunAwalDinasti rdf:datatype="http://www.w3.org/2001/XMLSchema#int">650</candi-indonesia1:tahunAwalDinasti>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#StupaBerlubang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#StupaBerlubang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Stupa"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Borobudur"/>
+        <candi-indonesia1:deskripsiKomponen>Stupa belah ketupat atau segi empat tempat arca Dhyani Buddha berada</candi-indonesia1:deskripsiKomponen>
+        <candi-indonesia1:namaKomponen>Stupa Berlubang</candi-indonesia1:namaKomponen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#StupaIndukBorobudur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#StupaIndukBorobudur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Stupa"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Borobudur"/>
+        <candi-indonesia1:deskripsiKomponen>Stupa terbesar yang terletak di puncak tertinggi candi</candi-indonesia1:deskripsiKomponen>
+        <candi-indonesia1:namaKomponen>Stupa Induk Borobudur</candi-indonesia1:namaKomponen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Sudamala -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Sudamala">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Relief"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Cetho"/>
+        <candi-indonesia1:bagianDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sukuh"/>
+        <candi-indonesia1:deskripsiKomponen>Kisah ruwatan Durga oleh Sadewa</candi-indonesia1:deskripsiKomponen>
+        <candi-indonesia1:judulCeritaRelief>Sudamala</candi-indonesia1:judulCeritaRelief>
+        <candi-indonesia1:namaKomponen>Sudamala</candi-indonesia1:namaKomponen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Sukuh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Sukuh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiHindu"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPemujaan"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe14"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatSukuh"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Karanganyar"/>
+        <candi-indonesia1:deskripsiCandi>Candi Hindu unik berarsitektur mirip piramida Maya di lereng Gunung Lawu</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Sukuh</candi-indonesia1:namaCandi>
+        <candi-indonesia1:judulWikipedia>Sukuh</candi-indonesia1:judulWikipedia>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#SumateraSelatan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#SumateraSelatan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Provinsi"/>
+        <candi-indonesia1:terletakDiPulau rdf:resource="http://www.semanticweb.org/candi-indonesia#Sumatra"/>
+        <candi-indonesia1:namaWilayah>Sumatera Selatan</candi-indonesia1:namaWilayah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#SumateraUtara -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#SumateraUtara">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Provinsi"/>
+        <candi-indonesia1:memilikiKabupaten rdf:resource="http://www.semanticweb.org/candi-indonesia#PadangLawas"/>
+        <candi-indonesia1:terletakDiPulau rdf:resource="http://www.semanticweb.org/candi-indonesia#Sumatra"/>
+        <candi-indonesia1:namaWilayah>Sumatera Utara</candi-indonesia1:namaWilayah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Sumatra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Sumatra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Pulau"/>
+        <candi-indonesia1:memilikiProvinsi rdf:resource="http://www.semanticweb.org/candi-indonesia#Jambi"/>
+        <candi-indonesia1:memilikiProvinsi rdf:resource="http://www.semanticweb.org/candi-indonesia#Riau"/>
+        <candi-indonesia1:memilikiProvinsi rdf:resource="http://www.semanticweb.org/candi-indonesia#SumateraSelatan"/>
+        <candi-indonesia1:memilikiProvinsi rdf:resource="http://www.semanticweb.org/candi-indonesia#SumateraUtara"/>
+        <candi-indonesia1:namaWilayah>Sumatra</candi-indonesia1:namaWilayah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Syailendra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Syailendra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Dinasti"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Borobudur"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Kalasan"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Mendut"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Pawon"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Plaosan"/>
+        <candi-indonesia1:membangunCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sewu"/>
+        <candi-indonesia1:namaDinasti>Syailendra</candi-indonesia1:namaDinasti>
+        <candi-indonesia1:tahunAkhirDinasti rdf:datatype="http://www.w3.org/2001/XMLSchema#int">850</candi-indonesia1:tahunAkhirDinasti>
+        <candi-indonesia1:tahunAwalDinasti rdf:datatype="http://www.w3.org/2001/XMLSchema#int">750</candi-indonesia1:tahunAwalDinasti>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#TanahBumbu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#TanahBumbu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Kabupaten"/>
+        <candi-indonesia1:terletakDiProvinsi rdf:resource="http://www.semanticweb.org/candi-indonesia#KalimantanSelatan"/>
+        <candi-indonesia1:namaWilayah>Tanah Bumbu</candi-indonesia1:namaWilayah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Tikus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Tikus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiHindu"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiPetirtaan"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe13"/>
+        <candi-indonesia1:memilikiKomponen rdf:resource="http://www.semanticweb.org/candi-indonesia#BaturPeripih"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatTikus"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Mojokerto"/>
+        <candi-indonesia1:deskripsiCandi>Candi petirtaan suci peninggalan Majapahit</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Tikus</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1300</candi-indonesia1:tahunBerdiri>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Wisnuwardhana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Wisnuwardhana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Raja"/>
+        <candi-indonesia1:berasalDariDinasti rdf:resource="http://www.semanticweb.org/candi-indonesia#Singasari"/>
+        <candi-indonesia1:namaRaja>Wisnuwardhana</candi-indonesia1:namaRaja>
+        <candi-indonesia1:tahunAkhirMemerintah rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1268</candi-indonesia1:tahunAkhirMemerintah>
+        <candi-indonesia1:tahunMulaiMemerintah rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1248</candi-indonesia1:tahunMulaiMemerintah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#Wonosobo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#Wonosobo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#Kabupaten"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Arjuna"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Puntadewa"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Semar"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Sembadra"/>
+        <candi-indonesia1:lokasiDariCandi rdf:resource="http://www.semanticweb.org/candi-indonesia#Srikandi"/>
+        <candi-indonesia1:namaWilayah>Wonosobo</candi-indonesia1:namaWilayah>
+        <candi-indonesia1:terletakDiProvinsi rdf:resource="http://www.semanticweb.org/candi-indonesia#JawaTengah"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/candi-indonesia#WringinLawang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/candi-indonesia#WringinLawang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiGapura"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/candi-indonesia#CandiHindu"/>
+        <candi-indonesia1:dibangunPadaAbad rdf:resource="http://www.semanticweb.org/candi-indonesia#AbadKe14"/>
+        <candi-indonesia1:memilikiKoordinat rdf:resource="http://www.semanticweb.org/candi-indonesia#KoordinatWringinLawang"/>
+        <candi-indonesia1:memilikiLokasi rdf:resource="http://www.semanticweb.org/candi-indonesia#Mojokerto"/>
+        <candi-indonesia1:deskripsiCandi>Gapura Candi Bentar peninggalan Kerajaan Majapahit</candi-indonesia1:deskripsiCandi>
+        <candi-indonesia1:namaCandi>Wringin Lawang</candi-indonesia1:namaCandi>
+        <candi-indonesia1:tahunBerdiri rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1400</candi-indonesia1:tahunBerdiri>
+        <candi-indonesia1:tinggiCandi rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15.5</candi-indonesia1:tinggiCandi>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

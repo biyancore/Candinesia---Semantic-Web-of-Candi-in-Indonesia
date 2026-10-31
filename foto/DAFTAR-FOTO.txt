@@ -1,0 +1,42 @@
+Taruh foto di folder ini dengan nama = ID candi (huruf besar/kecil harus sama), format .jpg / .jpeg / .png
+Contoh: Borobudur.jpg   BajangRatu.png   (format .webp tidak didukung, konversi dulu ke jpg/png)
+Tidak perlu mengubah file OWL. Candi tanpa foto tetap tampil dengan huruf monogram.
+
+NAMA FILE (ID)        NAMA CANDI        AGAMA        KABUPATEN
+----------------------------------------------------------------------
+Arjuna.jpg            Arjuna            Hindu        Wonosobo
+Badut.jpg             Badut             Hindu        Malang
+Bahal.jpg             Bahal             Buddha       Padang Lawas
+BajangRatu.jpg        Bajang Ratu       Hindu        Mojokerto
+Borobudur.jpg         Borobudur         Buddha       Magelang
+Bumiayu.jpg           Bumiayu           Siwa-Buddha  Pali
+CandiAgung.jpg        Candi Agung       Hindu        Amuntai
+CandiLaras.jpg        Candi Laras       Hindu        Amuntai
+Cetho.jpg             Cetho             Hindu        Karanganyar
+Gebang.jpg            Gebang            Hindu        Sleman
+GedongSongo.jpg       Gedong Songo      Hindu        Semarang
+GoaGajah.jpg          Goa Gajah         Siwa-Buddha  Gianyar
+GunungKawi.jpg        Gunung Kawi       Hindu        Gianyar
+Jago.jpg              Jago              Siwa-Buddha  Malang
+Jawi.jpg              Jawi              Siwa-Buddha  Malang
+Jolotundo.jpg         Jolotundo         Hindu        Mojokerto
+Kalasan.jpg           Kalasan           Buddha       Sleman
+Kidal.jpg             Kidal             Hindu        Malang
+Mendut.jpg            Mendut            Buddha       Magelang
+MuaraTakus.jpg        Muara Takus       Buddha       Kampar
+MuaroJambi.jpg        Muaro Jambi       Buddha       Muaro Jambi
+Ngawen.jpg            Ngawen            Buddha       Magelang
+Pawon.jpg             Pawon             Buddha       Magelang
+Penataran.jpg         Penataran         Hindu        Blitar
+Plaosan.jpg           Plaosan           Buddha       Klaten
+Prambanan.jpg         Prambanan         Hindu        Sleman
+Puntadewa.jpg         Puntadewa         Hindu        Wonosobo
+Sambisari.jpg         Sambisari         Hindu        Sleman
+Semar.jpg             Semar             Hindu        Wonosobo
+Sembadra.jpg          Sembadra          Hindu        Wonosobo
+Sewu.jpg              Sewu              Buddha       Klaten
+Singosari.jpg         Singosari         Siwa-Buddha  Malang
+Srikandi.jpg          Srikandi          Hindu        Wonosobo
+Sukuh.jpg             Sukuh             Hindu        Karanganyar
+Tikus.jpg             Tikus             Hindu        Mojokerto
+WringinLawang.jpg     Wringin Lawang    Hindu        Mojokerto
